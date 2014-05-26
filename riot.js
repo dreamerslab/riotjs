@@ -118,4 +118,4 @@ riot.route = function(to) {
   if (history.pushState) history.pushState(0, 0, to);
   pop(to);
 
-};})(typeof top == "object" ? window.riot = {} : exports);
+};})(typeof exports == "object" ? exports : window.riot = {});
